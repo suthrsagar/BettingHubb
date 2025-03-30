@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎰 Betting Dashboard</h1>
+    </header>
+
+    <h2>👤 Welcome, Player!</h2>
+    <h3>💰 Wallet: ₹<span id="walletAmount">1000</span></h3>
+    <h3>⏳ Timer: <span id="timer">30</span> sec</h3>
+
+    <input type="number" id="betAmount" placeholder="Enter Bet Amount">
+
+    <div class="bet-buttons">
+        <button class="red" onclick="placeBet('red')">Bet on 🔴 RED</button>
+        <button class="green" onclick="placeBet('green')">Bet on 🟢 GREEN</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

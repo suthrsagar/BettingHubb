@@ -1,0 +1,112 @@
+/* 🌟 Light Mode Theme */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 🔼 Header */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* 🏆 Dashboard */
+.dashboard-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 🕰 Timer */
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #dc3545;
+}
+
+/* 💰 Wallet Display */
+#walletAmount {
+    font-size: 22px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* 🎰 Bet Input */
+#betAmount {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+/* 🔼 Bet Buttons */
+.bet-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    width: 40%;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.red {
+    background: #dc3545;
+}
+
+.red:hover {
+    background: #c82333;
+}
+
+/* 🎉 Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup.win {
+    color: green;
+    border: 2px solid green;
+}
+
+.popup.lose {
+    color: red;
+    border: 2px solid red;
+}

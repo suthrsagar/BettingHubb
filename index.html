@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 🔐 Login & Signup Section -->
+    <div id="authSection">
+        <h2>🔐 Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+        <p>New User? <a href="#" onclick="showSignup()">Sign Up</a></p>
+
+        <div id="signupForm" style="display: none;">
+            <h2>📝 Sign Up</h2>
+            <input type="text" id="newUsername" placeholder="Choose Username">
+            <input type="password" id="newPassword" placeholder="Choose Password">
+            <button onclick="signup()">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- 🎰 Betting Dashboard (Hidden by Default) -->
+    <div id="dashboardSection" style="display: none;">
+        <header>
+            <h1>🎰 Betting Dashboard</h1>
+            <button onclick="logout()">Logout</button>
+        </header>
+
+        <h2>👤 Welcome, <span id="usernameDisplay"></span></h2>
+        <h3>💰 Wallet: ₹<span id="walletAmount">1000</span></h3>
+        <h3>⏳ Timer: <span id="timer">30</span> sec</h3>
+
+        <input type="number" id="betAmount" placeholder="Enter Bet Amount">
+
+        <div class="bet-buttons">
+            <button class="red" onclick="placeBet('red')">Bet on 🔴 RED</button>
+            <button class="green" onclick="placeBet('green')">Bet on 🟢 GREEN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
